@@ -19,7 +19,7 @@
 
 .sfondo-blue{
   background-color: #009788;
-  height: 20%;
+  height: 20vh;
   width: 100%;
   z-index: -2000;
   display: block;
@@ -27,7 +27,7 @@
 
 .sfondo-grey{
   background-color: gainsboro;
-  height: 80%;
+  height: 80vh;
   width: 100%;
   z-index: -2000;
   display: block;
@@ -42,6 +42,7 @@
 #wrapper{
   width: 80%;
   height: 95%;
+  z-index: 100000;
 }
 
 #wrapper div{
