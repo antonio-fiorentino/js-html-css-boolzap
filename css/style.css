@@ -17,6 +17,22 @@
   align-items: center;
 }
 
+.sfondo-blue{
+  background-color: #009788;
+  height: 20%;
+  width: 100%;
+  z-index: -2000;
+  display: block;
+}
+
+.sfondo-grey{
+  background-color: gainsboro;
+  height: 80%;
+  width: 100%;
+  z-index: -2000;
+  display: block;
+}
+
 #wrapper::after{
   content: "";
   display: table;
@@ -48,7 +64,6 @@
   background-color: lightblue;
   width: 70%;
   height: 80%;
-
 }
 
 /* Fine Main */
