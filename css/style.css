@@ -112,6 +112,7 @@ a{
   display: flex;
   align-items: center;
   padding-left: 9px;
+  margin-right: 15px;
 }
 
 .search{
@@ -137,6 +138,18 @@ ul{
 
 .persone{
   width: 100%;
+  padding: 15px;
+}
+
+.persone li{
+  padding: 10px 0px;
+}
+
+.persone img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  vertical-align: top;
 }
 
 /* Fine Sidebar */

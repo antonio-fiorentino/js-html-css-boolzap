@@ -63,8 +63,8 @@
 
           <div class="persone fl">
             <ul>
-              <li v-for"contact in contacts">
-                {{ contact.name }}
+              <li v-for="contact in contacts">
+                <img :src="`img/avatar${contact.avatar}.jpg`" alt="">{{ contact.name }}
               </li>
             </ul>
 
