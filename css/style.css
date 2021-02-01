@@ -181,7 +181,7 @@ ul{
 /* Box-Bottom */
 
 .box-bottom{
-  background-color: lime;
+  background-color: #f3eeea;
   width: 70%;
   height: 10%;
   display: flex;
@@ -190,11 +190,17 @@ ul{
   padding: 0px 10px;
 }
 
+.color-box{
+  color: #6d7277;
+  font-size: 25px;
+}
+
 .mex input{
   height: 65px;
   width: 900px;
   border-radius: 5px;
   padding: 10px;
+  font-size: 16px;
 }
 
 /* Fine Box-Bottom */
