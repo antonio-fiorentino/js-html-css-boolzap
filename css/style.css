@@ -9,13 +9,14 @@
 }
 
 body {
-  background: linear-gradient(#009788 15%,gainsboro 15% 80% );
+  background: linear-gradient(#009788 15%,gainsboro 15% 80%);
   font-family: 'Lato', sans-serif;
 }
 
 .container{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  min-width: 950px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -66,10 +67,10 @@ a{
   height: 70px;
   width: 100%;
   background-color: lavender;
-  line-height: 70px;
   padding: 0px 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center
 }
 
 .profilo-sez1 img{
@@ -93,7 +94,6 @@ a{
   height: 100px;
   width: 100%;
   background-color: #8edafc;
-  line-height: 0px;
   padding: 0px 25px;
   display: flex;
   align-items: center;
@@ -137,7 +137,6 @@ ul{
 
 .persone{
   width: 100%;
-  background-color: blue;
 }
 
 /* Fine Sidebar */
@@ -145,7 +144,6 @@ ul{
 /* Main */
 
 .main{
-  background-color: orange;
   width: 70%;
   height: 90%;
 }
@@ -156,18 +154,18 @@ ul{
   clear: both;
 }
 
-
-.chat img{
-  margin-top: 5px;
-}
-
-
-.profilo-sez1 span{
+.profilo-sez1 span:last-child{
   color: grey;
 }
 
-.chat{
-  line-height: 0;
+.nome{
+  margin-right: 10px;
+}
+
+.michele{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .messaggi{
