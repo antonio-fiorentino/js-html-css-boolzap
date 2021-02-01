@@ -184,6 +184,17 @@ ul{
   background-color: lime;
   width: 70%;
   height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.mex input{
+  height: 65px;
+  width: 900px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 /* Fine Box-Bottom */
