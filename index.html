@@ -4,51 +4,106 @@
     <meta charset="utf-8">
     <title>Blocchi</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
 
-<!-- - disegnare un layout a blocchi (quindi lavoriamo solo con i box colorati)
-     - 3 elementi, sidebar, main e bottom.
-     - tutti e 3 sono in un container centrato verticalmente e orizzontalmente
-     - il box "bottom" rimane sempre fisso in basso anche quando restringo il browser verticalmente -->
-
-     <!-- <div class="sfondo-blue">
-
-     </div>
-     <div class="sfondo-grey">
-
-     </div> -->
-
-
     <div class="container">
 
       <div id="wrapper">
 
+        <!-- SIDEBAR -->
+
         <div class="sidebar fl">
 
           <div class="navbar-profilo fl">
-            <img src="img/avatar_io.jpg" alt="">
-            Nome Utente
-            <i class="fas fa-circle-notch"></i>
-            <i class="fas fa-comment-alt"></i>
-            <i class="fas fa-ellipsis-v"></i>
+
+            <div class="profilo-sez1">
+              <img src="img/avatar_io.jpg" class="img-profile" alt="">
+              Nome Utente
+            </div>
+
+            <div class="profilo-sez2">
+              <a href="#"><i class="fas fa-circle-notch padd-i"></i></a>
+              <a href="#"><i class="fas fa-comment-alt padd-i"></i></a>
+              <a href="#"><i class="fas fa-ellipsis-v padd-7"></i></a>
+            </div>
           </div>
 
           <div class="notifiche fl">
 
+            <div class="bell">
+              <i class="fas fa-bell-slash"></i>
+            </div>
+
+            <div class="text">
+
+              <ul>
+                <li>Ricevi notifiche di nuovi messaggi</li>
+                <li><a href="#">Attiva notifiche desktop</a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="search fl">
+            <div class="">
+              <i class="fas fa-search"></i>
+            </div>
+
+            <div class="">
+              <input type="text" placeholder="Cerca o inizia una nuova chat">
+            </div>
+
+          </div>
+
+          <div class="persone fl">
           </div>
 
         </div>
 
+        <!-- /SIDEBAR -->
+
+        <!-- MAIN -->
+
         <div class="main fl">
 
+          <div class="navbar-profilo fl">
+
+            <div class="profilo-sez1 chat">
+              <img src="img/avatar_1.jpg" class="img-profile" alt="">
+
+                Michele
+                <span>Ultimo accesso oggi alle</span>
+
+            </div>
+
+            <div class="profilo-sez2">
+              <a href="#"><i class="fas fa-search padd-i"></i></a>
+              <a href="#"><i class="fas fa-paperclip padd-i"></i></i></a>
+              <a href="#"><i class="fas fa-ellipsis-v padd-7"></i></a>
+            </div>
+          </div>
+
+          <div class="messaggi fl">
+            
+          </div>
+
         </div>
+
+        <!-- /MAIN -->
+
+        <!-- BOX-BOTTOM -->
 
         <div class="box-bottom fl">
 
         </div>
+
+        <!-- /BOX-BOTTOM -->
 
       </div>
 

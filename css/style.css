@@ -10,6 +10,7 @@
 
 body {
   background: linear-gradient(#009788 15%,gainsboro 15% 80% );
+  font-family: 'Lato', sans-serif;
 }
 
 .container{
@@ -21,20 +22,14 @@ body {
   align-items: center;
 }
 
-.sfondo-blue{
-  background-color: #009788;
-  height: 20vh;
-  width: 100%;
-  z-index: -2000;
-  display: block;
+a{
+  color: grey;
 }
 
-.sfondo-grey{
-  background-color: gainsboro;
-  height: 80vh;
-  width: 100%;
-  z-index: -2000;
-  display: block;
+.img-profile{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 #wrapper::after{
@@ -46,17 +41,16 @@ body {
 #wrapper{
   width: 80%;
   height: 95%;
-  z-index: 100000;
 }
 
-#wrapper div{
+/* #wrapper div{
   display: inline-block;
-}
+} */
 
 /* Sidebar */
 
 .sidebar{
-  background-color: purple;
+  background-color: #fff;
   height: 100%;
   width: 30%;
 }
@@ -69,15 +63,81 @@ body {
 
 
 .navbar-profilo{
-  height: 9%;
+  height: 70px;
   width: 100%;
   background-color: lavender;
+  line-height: 70px;
+  padding: 0px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profilo-sez1 img{
+  vertical-align: middle;
+}
+
+.profilo-sez2{
+  color: grey;
+  font-size: 22px;
+}
+
+.padd-i{
+  padding-right: 15px;
+}
+
+.padd-7{
+  padding-right: 7.5px;
 }
 
 .notifiche{
-  height: 11%;
+  height: 100px;
   width: 100%;
   background-color: #8edafc;
+  line-height: 0px;
+  padding: 0px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.notifiche i{
+  font-size: 25px;
+  color: #8edafc;
+}
+
+.bell{
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 9px;
+}
+
+.search{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  color: grey;
+  padding: 20px;
+}
+
+.search input{
+  border: none;
+  color: black;
+  width: 200px;
+  margin-left: 30px;
+}
+
+ul{
+  list-style: none;
+}
+
+.persone{
+  width: 100%;
+  background-color: blue;
 }
 
 /* Fine Sidebar */
@@ -87,7 +147,33 @@ body {
 .main{
   background-color: orange;
   width: 70%;
-  height: 80%;
+  height: 90%;
+}
+
+.main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.chat img{
+  margin-top: 5px;
+}
+
+
+.profilo-sez1 span{
+  color: grey;
+}
+
+.chat{
+  line-height: 0;
+}
+
+.messaggi{
+  background-image: url(../img/mine.jpg);
+  height: calc(100% - 70px);
+  width: 100%;
 }
 
 /* Fine Main */
@@ -97,7 +183,7 @@ body {
 .box-bottom{
   background-color: lime;
   width: 70%;
-  height: 20%;
+  height: 10%;
 }
 
 /* Fine Box-Bottom */
