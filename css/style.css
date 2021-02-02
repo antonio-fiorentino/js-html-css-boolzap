@@ -48,10 +48,6 @@ a{
   height: 95%;
 }
 
-/* #wrapper div{
-  display: inline-block;
-} */
-
 /* Sidebar */
 
 .sidebar{
@@ -202,12 +198,17 @@ ul{
   background-color: #d8ffbe;
   border-radius: 10px;
   padding: 15px 15px;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
 .received{
   background-color: #fff;
   border-radius: 10px;
   padding: 15px 15px;
+  text-align: left;
+  margin-bottom: 10px;
+
 }
 
 /* Fine Main */

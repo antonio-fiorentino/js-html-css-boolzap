@@ -101,14 +101,16 @@
 
           <div class="messaggi fl">
 
-            <div class="sent fr" v-for="text in messages">
-              {{text.text}}
+
+
+            <div v-for="message in contacts[0].messages" :class="{
+              text:true,
+              received: (message.status === 'received'),
+              sent: (message.status === 'sent'),
+            }">
+              {{message.text}}
             </div>
 
-
-            <div class="received fl">
-
-            </div>
 
           </div>
 

@@ -87,6 +87,15 @@ var app = new Vue({
 	},
 ],
 
- }
+},
+
+methods:{
+  mex: function(){
+    if (true) {
+
+    }
+  }
+}
+
 });
 Vue.config.devtools = true
