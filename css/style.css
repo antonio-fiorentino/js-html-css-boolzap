@@ -123,13 +123,15 @@ a{
   width: 100%;
   color: grey;
   padding: 20px;
+  background-color: gainsboro;
 }
 
 .search input{
   border: none;
   color: black;
-  width: 200px;
+  width: 150%;
   margin-left: 30px;
+  padding-left: 5px;
 }
 
 ul{
@@ -150,6 +152,9 @@ ul{
   width: 70px;
   border-radius: 50%;
   vertical-align: top;
+}
+
+.search-contacts{
 }
 
 /* Fine Sidebar */
@@ -175,7 +180,7 @@ ul{
   margin-right: 10px;
 }
 
-.michele{
+.nome-contatto{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,23 +197,27 @@ ul{
   height: calc(100% - 70px);
   width: 100%;
   padding: 15px 30px;
+  position: relative;
 }
 
 .sent{
   background-color: #d8ffbe;
   border-radius: 10px;
   padding: 15px 15px;
-  text-align: right;
   margin-bottom: 10px;
+  max-width: 200px;
+  float: right;
+  clear: both;
 }
 
 .received{
   background-color: #fff;
   border-radius: 10px;
   padding: 15px 15px;
-  text-align: left;
   margin-bottom: 10px;
-
+  max-width: 200px;
+  float: left;
+  clear: both;
 }
 
 /* Fine Main */

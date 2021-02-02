@@ -55,7 +55,7 @@
               <i class="fas fa-search"></i>
             </div>
 
-            <div class="">
+            <div class="search-contacts">
               <input type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
 
@@ -63,7 +63,7 @@
 
           <div class="persone fl">
             <ul>
-              <li v-for="contact in contacts">
+              <li v-for="(contact, index) in contacts" @click="newConversation(index)">
                 <img :src="`img/avatar${contact.avatar}.jpg`" alt="">{{ contact.name }}
               </li>
             </ul>
@@ -81,9 +81,9 @@
           <div class="navbar-profilo fl">
 
             <div class="profilo-sez1 chat">
-              <div class="michele">
-                <div class="nome">
-                  <img src="img/avatar_1.jpg" class="img-profile" alt="">
+              <div class="nome-contatto">
+                <div class="nome" v-for="(contact, index) in contacts">
+                  <img :src="`img/avatar${contact.avatar}.jpg`" class="img-profile" alt="">
                 </div>
                 <div class="">
                   <span>Michele</span><br>
@@ -103,7 +103,7 @@
 
 
 
-            <div v-for="message in contacts[0].messages" :class="{
+            <div v-for="message in contacts[activeIndex].messages" :class="{
               text:true,
               received: (message.status === 'received'),
               sent: (message.status === 'sent'),

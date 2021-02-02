@@ -1,6 +1,7 @@
 var app = new Vue({
  el: '#wrapper',
  data:{
+   activeIndex: 0,
    contacts: [
 	{
 		name: 'Michele',
@@ -90,12 +91,12 @@ var app = new Vue({
 },
 
 methods:{
-  mex: function(){
-    if (true) {
+  newConversation: function(index){
+    this.activeIndex = index;
+  },
 
-    }
-  }
 }
+
 
 });
 Vue.config.devtools = true
