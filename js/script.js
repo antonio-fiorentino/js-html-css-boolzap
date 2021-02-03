@@ -110,6 +110,7 @@ methods:{
         ok
       </div>
       `
+      console.log(ok + 'ok');
   },100)
 
 }
