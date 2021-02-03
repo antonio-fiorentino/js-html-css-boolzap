@@ -83,10 +83,10 @@
             <div class="profilo-sez1 chat">
               <div class="nome-contatto">
                 <div class="nome" v-for="(contact, index) in contacts">
-                  <img :src="`img/avatar${contact.avatar}.jpg`" class="img-profile" alt="">
+                  <img :src="`img/avatar${contacts[activeIndex].avatar}.jpg`" class="img-profile" alt="">
                 </div>
                 <div class="">
-                  <span>Michele</span><br>
+                  <span>{{contacts[activeIndex].name}}</span><br>
                   <span>Ultimo accesso oggi alle</span>
                 </div>
               </div>
