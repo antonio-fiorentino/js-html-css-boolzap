@@ -98,20 +98,20 @@ methods:{
   },
 
   go: function () {
-    this.submit.push(this.txt);
-    console.log(this.submit);
+    this.contacts[activeIndex].messages.push(this.txt);
+
+    console.log(this.contacts[activeIndex]);
+    setTimeout(function(){
+     let ok = "";
+       ok.innerHTML+=`
+       <div class="received">
+         ok
+       </div>
+       `
+       console.log(ok + 'ok');
+   },1000)
     return this.txt= '';
   },
-
-  ok: setTimeout(function(){
-    let ok = "";
-      ok.innerHTML+=`
-      <div class="received">
-        ok
-      </div>
-      `
-      console.log(ok + 'ok');
-  },100)
 
 }
 });
