@@ -2,6 +2,8 @@ var app = new Vue({
  el: '#wrapper',
  data:{
    activeIndex: 0,
+   txt:'',
+   submit:[],
    contacts: [
 	{
 		name: 'Michele',
@@ -95,8 +97,12 @@ methods:{
     this.activeIndex = index;
   },
 
+  go: function () {
+    this.submit.push(this.txt);
+    console.log(this.submit);
+    return this.txt= '';
+  },
+
 }
-
-
 });
 Vue.config.devtools = true
