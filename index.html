@@ -104,12 +104,16 @@
 
 
 
-            <div v-for="message in contacts[activeIndex].messages" :class="{
+            <div v-for="message in contacts[activeIndex].messages" v-on:keyup.enter="ok" :class="{
               text:true,
               received: (message.status === 'received'),
               sent: (message.status === 'sent'),
             }">
               {{message.text}}
+            </div>
+
+            <div class="sent" v-for="(text, i) in submit">
+              {{text}}
             </div>
 
 

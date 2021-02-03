@@ -104,13 +104,13 @@ methods:{
   },
 
   ok: setTimeout(function(){
-    const ok;
-    ok.innerHTML+=`
-    <div class="received">
-      ok
-    </div>
-    `
-  },1000)
+    let ok = "";
+      ok.innerHTML+=`
+      <div class="received">
+        ok
+      </div>
+      `
+  },100)
 
 }
 });
