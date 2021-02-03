@@ -103,6 +103,15 @@ methods:{
     return this.txt= '';
   },
 
+  ok: setTimeout(function(){
+    const ok;
+    ok.innerHTML+=`
+    <div class="received">
+      ok
+    </div>
+    `
+  },1000)
+
 }
 });
 Vue.config.devtools = true
