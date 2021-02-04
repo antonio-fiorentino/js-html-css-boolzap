@@ -120,13 +120,14 @@ methods:{
    this.txt= '';
   },
 
-  searchContacts: function (){
+  searchContacts  (){
     this.contacts.forEach((element)=>{
       if (element.name.toLowerCase().includes(this.searchContactText.toLowerCase())){
         element.visible = true;
       }else {
-        element.visible=false;
+        element.visible = false;
       }
+      console.log(element);
     });
   }
 
