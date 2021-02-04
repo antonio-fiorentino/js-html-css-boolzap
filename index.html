@@ -56,7 +56,8 @@
             </div>
 
             <div class="search-contacts">
-              <input type="text" placeholder="Cerca o inizia una nuova chat">
+              <input type="text" placeholder="Cerca o inizia una nuova chat"
+              v-model="searchContactText" @keyup="searchContacts">
             </div>
 
           </div>
@@ -132,7 +133,7 @@
           </div>
 
           <div class="mex">
-            <input type="text" placeholder="Scrivi un messaggio" v-model="txt" v-on:keyup.enter="go">
+            <input type="text" placeholder="Scrivi un messaggio" v-model="txt" v-on:keyup.enter="mexInviato">
           </div>
 
           <div class="color-box">

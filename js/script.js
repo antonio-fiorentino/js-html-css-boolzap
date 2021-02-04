@@ -3,6 +3,7 @@ var app = new Vue({
  data:{
    activeIndex: 0,
    txt:'',
+   searchContactText:'',
    submit:[],
    contacts: [
 	{
@@ -97,21 +98,37 @@ methods:{
     this.activeIndex = index;
   },
 
-  go: function () {
-    this.contacts[activeIndex].messages.push(this.txt);
 
-    console.log(this.contacts[activeIndex]);
-    setTimeout(function(){
-     let ok = "";
-       ok.innerHTML+=`
-       <div class="received">
-         ok
-       </div>
-       `
-       console.log(ok + 'ok');
+  mexInviato: function () {
+    this.contacts[this.activeIndex].messages.push(
+      {
+        date: '10/01/2020 15:50:00',
+        text:  this.txt,
+        status: 'sent',
+      }
+    );
+
+    setTimeout(()=>{
+      this.contacts[this.activeIndex].messages.push(
+        {
+          date: '10/01/2020 15:50:00',
+          text:  'ok',
+          status: 'received',
+        }
+      );
    },1000)
-    return this.txt= '';
+   this.txt= '';
   },
+
+  searchContacts: function (){
+    this.contacts.forEach((element)=>{
+      if (element.name.toLowerCase().includes(this.searchContactText.toLowerCase())){
+        element.visible = true;
+      }else {
+        element.visible=false;
+      }
+    });
+  }
 
 }
 });
