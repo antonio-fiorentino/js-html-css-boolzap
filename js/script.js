@@ -129,6 +129,18 @@ methods:{
       }
       console.log(element);
     });
+  },
+
+  ricerca: function (){
+    console.log(this.contacts.visible);
+    let listaContatti = document.getElementById('listaContatti');
+    this.contacts.forEach((element)=>{
+      if (this.contacts.visible === false) {
+        listaContatti.style.display = none;
+
+      }
+    })
+
   }
 
 }
