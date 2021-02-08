@@ -63,8 +63,8 @@
           </div>
 
           <div class="persone fl">
-            <!-- <ul>  v-if="contacts.visible === true" -->
-              <li id="listaContatti" v-for="(contact, index) in contacts" @click="newConversation(index)">
+            <ul>
+              <li id="listaContatti" v-for="(contact, index) in contacts" v-if="contact.visible === true" @click="newConversation(index)">
                 <img :src="`img/avatar${contact.avatar}.jpg`" alt="">{{ contact.name }}
               </li>
             </ul>
